@@ -1,13 +1,12 @@
 .Pokecard {
   background: lightgray;
-  width: 200px;
-  height: 220px;
+  text-align: center;
   margin: 1.4rem;
   padding: 1rem;
   flex: 1;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   justify-content: center;
 }
