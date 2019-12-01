@@ -17,11 +17,11 @@ class Pokedex extends Component {
     ));
     return (
       <div className="Pokedex">
-        <h2 className={isWinner ? 'Pokedex-win' : 'Pokedex-lose'}>
-          {isWinner ? 'This team wins!' : 'This team loses!'}
-        </h2>
-        <h3>Total Experience = {totalExp}</h3>
-        <div className="Pokedex-cards">{teamMembers}</div>
+        <div className={isWinner ? 'Pokedex-win' : 'Pokedex-lose'}>
+          <h2>{isWinner ? 'This team wins!' : 'This team loses!'}</h2>
+          <h3>Total Experience = {totalExp}</h3>
+          <div className="Pokedex-cards">{teamMembers}</div>
+        </div>
       </div>
     );
   }

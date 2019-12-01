@@ -10,10 +10,10 @@ let team2Exp = 0;
 function assignTeams(array) {
   for (let i = 0; i < array.length; i++) {
     let team = Math.floor(Math.random() * 2) + 1;
-    if ((team == 1 && hand1.length < 4) || hand2.length == 4) {
+    if ((team === 1 && hand1.length < 4) || hand2.length === 4) {
       hand1.push(array[i]);
       team1Exp += array[i].base_experience;
-    } else if ((team == 2 && hand2.length < 4) || hand1.length == 4) {
+    } else if ((team === 2 && hand2.length < 4) || hand1.length === 4) {
       hand2.push(array[i]);
       team2Exp += array[i].base_experience;
     }
@@ -40,6 +40,9 @@ class Pokegame extends Component {
     return (
       <div className="Pokegame">
         <h1 className="Pokegame-title">Pokedex</h1>
+        <a className="Pokegame-button" href="javascript:history.go(0)">
+          PLAY AGAIN
+        </a>
         <Pokedex
           team={hand1}
           totalExp={team1Exp}

@@ -6,3 +6,25 @@
 .Pokegame-title {
   text-align: center;
 }
+
+.Pokegame-button {
+  border-radius: 20px;
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+  width: 150px;
+  padding: 10px;
+  color: white;
+  background: #949cac;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.Pokegame-button:hover {
+  background: #838ea5;
+}
+
+.Pokegame-button:focus {
+  transform: scale(0.95);
+}

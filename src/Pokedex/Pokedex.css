@@ -8,10 +8,17 @@
   text-align: center;
 }
 
-.Pokedex-win {
+.Pokedex-win > h2 {
   color: green;
 }
 
-.Pokedex-lose {
+.Pokedex-lose > h2 {
   color: red;
+}
+
+.Pokedex-win h3,
+.Pokedex-lose h3 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 1.8;
 }
